@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Assignment 9
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item  *ngFor="let movies of myData" (click)="openModal(movies)">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/{{movies.FilmName}}.png">
+      </ion-thumbnail>
+      <ion-label >{{ movies.FilmName}}</ion-label>
+    </ion-item>
+       </ion-list>
+
+</ion-content>
